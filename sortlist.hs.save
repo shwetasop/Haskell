@@ -1,0 +1,6 @@
+sortlist :: [[Int]]->[Int]
+
+sortlist []=[]
+sortlist (x:xs)= length [[x]]:  sortlist [xs]
+
+

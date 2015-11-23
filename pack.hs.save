@@ -1,0 +1,11 @@
+
+pack [x]  = [[x]]
+pack (x:xs)
+	| elem x xs = [x]:adddup x xs
+	|otherwise  = [x]:pack xs
+
+
+adddup y []  =  [[]]
+adddup y (x:xs)
+	| y==x	= [x]:adddup y xs
+	|otherwise = adddup y xs

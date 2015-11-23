@@ -1,0 +1,9 @@
+pack []  = [[]]
+pack (x:xs) 
+	| elem x xs = [x]:adddup x xs
+	| = [x]:pack xs
+
+
+
+
+

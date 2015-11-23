@@ -1,0 +1,7 @@
+data Tree = Leaf Int | Node Tree Int Tree
+
+occurs:: Int->Tree->Boo 
+createlist::Tree->[Int]
+createlist(Leaf y)= [y]
+createlist(Node tr1 n1 tr2) =(createlist tr1)++[n1]++(createlist tr2)
+	

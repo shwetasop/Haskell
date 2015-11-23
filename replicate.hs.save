@@ -1,0 +1,5 @@
+replicate1 (x:xs) 0 = replicateall xs 3
+replicate1 (x:xs) k = x: replicate1 (x:xs) (k-1)
+
+replicateall [] 3 =[]
+replicateall (x:xs) 3 = replicate1 (x:xs) 3 
